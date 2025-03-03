@@ -1,0 +1,27 @@
+
+- Neutral: soil-dark (#523a28), soil (#7f5539)
+- Background: cream-light (#f8f7f1), cream (#f0ead2)
+- Accent: terracotta (#c76a3a)
+pick the classes from "tailwind.config.js" file
+
+STYLE ELEMENTS:
+- Soft, organic shapes with rounded corners (rounded-natural)
+- Gentle shadows (shadow-soft) for subtle depth
+- Typography: serif fonts for headings, sans-serif for body text
+- Generous whitespace for an airy, natural feel
+- Subtle textures that evoke natural materials
+
+COMPONENT PATTERNS:
+- Cards with hover effects that create a sense of liveliness
+- Filters in sidebars with clear visual hierarchy
+- Nature-inspired icons and visual elements
+- Subtle animations on scroll using AOS library
+- Responsive layouts that adapt gracefully to all devices
+
+USER EXPERIENCE:
+- Intuitive navigation with clear pathways
+- Visual cues that invite exploration
+- Smooth transitions between states
+- Accessibility-focused design with proper contrast
+
+The design should feel organic, refreshing, and calming while maintaining a clean, professional aesthetic that showcases plant products effectively.
