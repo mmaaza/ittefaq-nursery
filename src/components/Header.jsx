@@ -251,21 +251,21 @@ const Header = () => {
                             {isProfileDropdownOpen && (
                                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-natural shadow-soft py-2 z-50">
                                     <Link 
-                                        to="/account" 
+                                        to="/dashboard" 
                                         className="block px-4 py-2 text-soil-dark hover:bg-moss-light transition-colors"
                                         onClick={() => setIsProfileDropdownOpen(false)}
                                     >
-                                        My Account
+                                        My Dashboard
                                     </Link>
                                     <Link 
-                                        to="/orders" 
+                                        to="/dashboard/orders" 
                                         className="block px-4 py-2 text-soil-dark hover:bg-moss-light transition-colors"
                                         onClick={() => setIsProfileDropdownOpen(false)}
                                     >
                                         Orders
                                     </Link>
                                     <Link 
-                                        to="/wishlist" 
+                                        to="/dashboard/wishlist" 
                                         className="block px-4 py-2 text-soil-dark hover:bg-moss-light transition-colors"
                                         onClick={() => setIsProfileDropdownOpen(false)}
                                     >

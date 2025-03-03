@@ -8,6 +8,14 @@ import ProductDetails from './pages/ProductDetails';
 import About from './pages/About';
 import Cart from './pages/Cart';
 import { CartProvider } from './context/CartContext';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Dashboard from "./pages/Dashboard";
+import AccountOverview from "./components/dashboard/AccountOverview";
+import OrdersPage from "./components/dashboard/OrdersPage";
+import WishlistPage from "./components/dashboard/WishlistPage";
+import AddressesPage from "./components/dashboard/AddressesPage";
+import SettingsPage from "./components/dashboard/SettingsPage";
 import './index.css';
 
 function App() {
@@ -33,6 +41,15 @@ function App() {
                 
                 {/* Cart route */}
                 <Route path="/cart" element={<Cart />} />
+                
+                {/* Dashboard Routes */}
+                <Route path="/dashboard" element={<Dashboard />}>
+                  <Route index element={<AccountOverview />} />
+                  <Route path="orders" element={<OrdersPage />} />
+                  <Route path="wishlist" element={<WishlistPage />} />
+                  <Route path="addresses" element={<AddressesPage />} />
+                  <Route path="settings" element={<SettingsPage />} />
+                </Route>
                 
                 {/* Default 404 page */}
                 <Route path="*" element={<div className="container mx-auto px-4 py-20 text-center"><h1 className="text-4xl font-serif text-soil-dark mb-4">Page Not Found</h1><p className="mb-8">The page you're looking for doesn't exist.</p><Link to="/" className="bg-leaf text-white py-2 px-6 rounded-natural">Back to Home</Link></div>} />
