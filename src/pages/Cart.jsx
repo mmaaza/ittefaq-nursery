@@ -112,11 +112,12 @@ const Cart = () => {
                   </div>
                 </div>
                 
-                <button 
-                  className="w-full bg-leaf text-white py-3 px-6 rounded-natural hover:bg-leaf-dark transition-colors shadow-soft hover:shadow-hover"
+                <Link 
+                  to="/checkout"
+                  className="w-full bg-leaf text-white py-3 px-6 rounded-natural hover:bg-leaf-dark transition-colors shadow-soft hover:shadow-hover block text-center"
                 >
                   Proceed to Checkout
-                </button>
+                </Link>
                 
                 <div className="mt-4">
                   <Link to="/shop" className="text-leaf hover:text-leaf-dark block text-center">

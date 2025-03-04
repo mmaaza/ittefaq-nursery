@@ -3,25 +3,25 @@ import logo from "../assets/logo.webp";
 const Footer = () => {
     return (
         <footer className="bg-moss-dark text-cream-light">
-            <div className="container mx-auto px-4 py-12">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="container mx-auto px-6 md:px-8 py-10 md:py-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-12">
                     {/* Brand */}
                     <div className="md:col-span-1">
-                        <Link to="/" className="flex items-center mb-4">
+                        <Link to="/" className="flex items-center mb-6">
                             <img
                                 src={logo}
                                 alt="Nursery Logo"
-                                className="h-10 w-auto mr-2"
+                                className="h-12 w-auto mr-3"
                             />
                             <span className="font-serif text-xl font-bold text-cream-light">
                                 Ittefaq Nursery
                             </span>
                         </Link>
-                        <p className="text-moss-light mb-4">
+                        <p className="text-moss-light mb-6 leading-relaxed">
                             Bringing nature into homes since 2010. Quality
                             plants, delivered with care.
                         </p>
-                        <div className="flex space-x-4">
+                        <div className="flex space-x-5">
                             <a
                                 href="https://facebook.com"
                                 className="text-moss-light hover:text-cream-light transition-colors"
@@ -63,10 +63,10 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-lg font-serif font-semibold mb-4">
+                        <h3 className="text-lg font-serif font-semibold mb-5">
                             Shop
                         </h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-3">
                             <li>
                                 <Link
                                     to="/shop"
@@ -112,10 +112,10 @@ const Footer = () => {
 
                     {/* Information */}
                     <div>
-                        <h3 className="text-lg font-serif font-semibold mb-4">
+                        <h3 className="text-lg font-serif font-semibold mb-5">
                             Information
                         </h3>
-                        <ul className="space-y-2">
+                        <ul className="space-y-3">
                             <li>
                                 <Link
                                     to="/about"
@@ -161,10 +161,10 @@ const Footer = () => {
 
                     {/* Newsletter */}
                     <div>
-                        <h3 className="text-lg font-serif font-semibold mb-4">
+                        <h3 className="text-lg font-serif font-semibold mb-5">
                             Stay Connected
                         </h3>
-                        <p className="text-moss-light mb-4">
+                        <p className="text-moss-light mb-5 leading-relaxed">
                             Sign up to receive plant care tips and exclusive
                             offers.
                         </p>
@@ -172,11 +172,11 @@ const Footer = () => {
                             <input
                                 type="email"
                                 placeholder="Your email address"
-                                className="px-4 py-2 rounded-l-natural focus:outline-none flex-1 text-soil-dark"
+                                className="px-4 py-3 rounded-l-natural focus:outline-none flex-1 text-soil-dark text-sm"
                             />
                             <button
                                 type="submit"
-                                className="bg-leaf hover:bg-leaf-dark text-white transition-colors px-4 py-2 rounded-r-natural"
+                                className="bg-leaf hover:bg-leaf-dark text-white transition-colors px-5 py-3 rounded-r-natural font-medium"
                             >
                                 Join
                             </button>
@@ -184,12 +184,12 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-moss mt-12 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <div className="border-t border-moss mt-10 md:mt-14 pt-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-moss-light text-sm">
                         © {new Date().getFullYear()} Ittefaq Nursery. All rights
                         reserved.
                     </p>
-                    <div className="flex space-x-4 mt-4 md:mt-0">
+                    <div className="flex space-x-6 mt-5 md:mt-0">
                         <Link
                             to="/privacy"
                             className="text-moss-light hover:text-cream-light text-sm transition-colors"

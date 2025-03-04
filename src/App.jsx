@@ -7,6 +7,9 @@ import CategoryDetail from './pages/CategoryDetail';
 import ProductDetails from './pages/ProductDetails';
 import About from './pages/About';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+import Login from './pages/Login';
+import Register from './pages/Register';
 import { CartProvider } from './context/CartContext';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -26,6 +29,10 @@ function App() {
               <Route path="/" element={<RootLayout />}>
                 <Route index element={<Home />} />
                 
+                {/* Authentication routes */}
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                
                 {/* Shop and Categories routes */}
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/categories" element={<Categories />} />
@@ -39,8 +46,9 @@ function App() {
                 {/* About route */}
                 <Route path="/about" element={<About />} />
                 
-                {/* Cart route */}
+                {/* Cart and Checkout routes */}
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/checkout" element={<Checkout />} />
                 
                 {/* Dashboard Routes */}
                 <Route path="/dashboard" element={<Dashboard />}>
